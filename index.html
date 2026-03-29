@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Doner Restaurant & Grill House</title>
+    <title>King Doner: Restaurant & Grill House</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;600;700;900&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -35,11 +34,6 @@
             z-index: 1000;
             border-bottom: 3px solid var(--brand-gold);
             min-height: 60px;
-        }
-
-        .address-link:hover {
-            color: #e2dcc8;
-            text-decoration: underline;
         }
 
         .menu-container {
@@ -95,12 +89,11 @@
         .col-num { width: 1%; white-space: nowrap; padding-right: 35px !important; vertical-align: top !important; padding-top: 65px !important; }
         .col-img-box { width: 1%; white-space: nowrap; padding-right: 60px !important; }
         .col-img-box-right { width: 1%; white-space: nowrap; padding-left: 60px !important; }
-        
         .col-text { width: auto; text-align: left; }
 
         .title-row {
             display: flex;
-            justify-content: space-between; 
+            justify-content: space-between;
             align-items: baseline;
             width: 100%;
             margin-bottom: 0.5rem;
@@ -113,7 +106,7 @@
             font-weight: 700; 
             font-family: 'Playfair Display', serif;
             color: var(--brand-gold); 
-            padding-left: 40px; 
+            padding-left: 40px;
             flex-shrink: 0;
         }
 
@@ -192,90 +185,18 @@
                 height: 0;
                 margin: 0;
             }
-            .category-header {
-                page-break-after: avoid;
-                break-after: avoid;
-            }
-            .force-page-start {
-                page-break-before: always !important;
-                break-before: page !important;
-            }
         }
 
         @media (max-width: 1199px) {
-            .menu-container {
-                width: 100%;
-                margin: 0;
-                padding: 40px 20px;
-                border: none;
-            }
-
-            header .text-center { margin-bottom: 2rem; }
-            header h1 { font-size: 18vw !important; }
-            header p.text-5xl { font-size: 5vw !important; letter-spacing: 0.1em; }
-            header .text-3xl { font-size: 3.5vw !important; }
-
-            .category-header h2 { font-size: 3rem !important; }
-            .category-header { margin-top: 3rem; margin-bottom: 1.5rem; }
-
-            .menu-table, .menu-table tbody, .menu-table tr, .menu-table td {
-                display: block;
-                width: 100% !important;
-                text-align: center !important;
-            }
-
-            .menu-table tr {
-                padding: 40px 0;
-                border-bottom: 1px solid var(--border-soft);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .col-num { padding: 0 0 20px 0 !important; }
-            .num-badge { width: 60px; height: 60px; font-size: 1.4rem; }
-
-            .img-wrapper {
-                width: 90vw;
-                height: 90vw;
-                max-width: 800px;
-                max-height: 800px;
-                margin: 0 auto 30px;
-            }
-            .col-img-box, .col-img-box-right { 
-                padding: 0 !important; 
-                order: -1;
-            }
-
-            .col-text { padding: 0 !important; }
-            
-            .title-row {
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                border: none;
-                margin-bottom: 10px;
-            }
-
-            .item-title { font-size: 2.2rem !important; text-align: center; }
-            .item-description { font-size: 1.8rem !important; margin: 10px auto; text-align: center; }
-            
-            .inline-price { 
-                font-size: 2.5rem !important; 
-                padding: 10px 0 0 0 !important; 
-                display: block;
-                width: 100%;
-                text-align: center;
-            }
-
-            .veggie-label { display: block; margin: 10px auto; width: fit-content; }
-            
-            .admin-bar {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 10px;
-            }
+            .menu-container { padding: 40px 20px; width: 100%; margin: 0; border: none;}
+            header h1 { font-size: 12vw !important; }
+            .item-title { font-size: 2.2rem !important; }
+            .item-description { font-size: 1.8rem !important; }
+            .inline-price { font-size: 2.5rem !important; padding: 10px 0 0 0 !important; }
+            .img-wrapper { width: 90vw; height: 90vw; margin: 0 auto 30px; }
+            .menu-table, .menu-table tbody, .menu-table tr, .menu-table td { display: block; width: 100% !important; text-align: center !important; }
+            .title-row { flex-direction: column; align-items: center; border: none; }
+            .col-img-box, .col-img-box-right { order: -1; padding: 0 !important; }
         }
     </style>
 </head>
@@ -287,21 +208,21 @@
                 <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
                 <circle cx="12" cy="10" r="3"/>
             </svg>
-            <span class="font-sans text-sm md:text-lg"></span>
+            <span class="font-sans text-sm md:text-lg">Open for Dining & Takeaway</span>
         </div>
 
         <div class="flex items-center gap-2 bg-[#926627] text-white font-bold py-2 px-6 rounded-full border border-[#e2dcc8] shadow-lg">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
             </svg>
-            <span class="font-sans text-sm md:text-lg"></span>
+            <span class="font-sans text-sm md:text-lg">Contact Us to Order</span>
         </div>
     </div>
 
     <div class="menu-container">
         <header class="text-center mb-24 relative z-10">
             <div class="inline-block border-y-2 border-amber-800 py-6 mb-6">
-                <h1 class="main-title text-[12rem] text-gray-900 font-black tracking-tighter uppercase leading-none">KING DONER</h1>
+                <h1 class="main-title text-[10rem] text-gray-900 font-black tracking-tighter uppercase leading-none">KING DONER</h1>
             </div>
             <p class="text-5xl uppercase tracking-[0.4em] text-amber-800 font-bold">Restaurant & Grill House</p>
             <div class="mt-8 flex items-center justify-center gap-6">
@@ -315,112 +236,117 @@
     </div>
 
     <script type="module">
-        const allItems = [
-            [1, "Lamb On The Bone", "Tender pieces of lamb, slow-cooked in special sauce and herbs. Served with Stew, Salad, Rice & Naan Bread", "$9.99", "lamb"],
-            [2, "Lamb On Bone (Large)", "Large tender pieces of lamb, slow-cooked in special sauce. Served with Stew, Salad, Rice & Naan Bread", "$12.99", "lamb"],
-            [3, "Lamb Shank", "Slow-cooked lamb shank marinated in special herbs. Served with Stew, Salad, Rice & Naan Bread", "$13.40", "lamb"],
-            [4, "Tashreeb", "Naan soaked in okra and lamb stew.", "$8.89", "lamb"],
-            [5, "Lamb Loin Chops", "BBQ Lamb back loin, marinated with herbs.", "$17.99", "lamb"],
-            [6, "Lamb Chopped (Poached)", "BBQ Poached in a lightly spiced vegetable stock.", "$16.49", "lamb"],
-            [7, "1/4 Chicken ", "Oven-roasted quarter chicken. Served with stews, salad, rice, and naan.", "$8.99", "poultry"],
-            [8, "1/2 Chicken With Rice ", "Oven-roasted half chicken. Served with stews, salad, rice, and naan.", "$11.49", "poultry"],
-            [9, "1/2 Chicken with Salad", "Oven-roasted half chicken with salad and naan OR chips.", "$6.99", "poultry"],
-            [10, "Mixed Lamb, Chicken And Rice", "Piece of lamb on bone and quarter chicken, oven-roasted.", "$13.89", "poultry"],
-            [11, "Biryani", "Fragrant rice with tender pieces of chicken and lamb.", "$10.99", "poultry"],
-            [12, "Chicken Shawarma", "Roasted boneless chicken, marinated with lemon and garlic.", "$9.49", "shawarma"],
-            [13, "Beef Shawarma", "Roasted boneless beef, marinated with lemon and onion.", "$11.49", "shawarma"],
-            [14, "Mixed Shawarma", "Combination of roasted beef and chicken shawarma.", "$11.49", "shawarma"],
-            [15, "Chicken Shawarma & Lamb Shish", "Chicken shawarma paired with lamb cubes.", "$11.89", "shawarma"],
-            [16, "Chicken Shawarma & Chicken Shish", "Chicken shawarma paired with chicken cubes.", "$10.89", "shawarma"],
-            [17, "Chicken Shawarma & Lamb Kafta", "Chicken shawarma paired with minced lamb.", "$10.99", "shawarma"],
-            [18, "Chicken Shawarma & Wings", "Chicken shawarma served with chicken wings.", "$9.99", "shawarma"],
-            [19, "Beef Shawarma & Lamb Shish", "Beef shawarma paired with lamb cubes.", "$11.89", "shawarma"],
-            [20, "Beef Shawarma & Chicken Shish", "Beef shawarma paired with chicken cubes.", "$11.49", "shawarma"],
-            [21, "Beef Shawarma & Lamb Kafta", "Beef shawarma paired with minced lamb.", "$11.99", "shawarma"],
-            [22, "Beef Shawarma & Wings", "Beef shawarma served with chicken wings.", "$10.99", "shawarma"],
-            [23, "Mixed Shawarma & Lamb Shish", "Beef and chicken shawarma with lamb cubes.", "$12.99", "shawarma"],
-            [24, "Mixed Shawarma & Chicken Shish & Lamb Shish", "Beef, chicken shawarma with chicken and Lamb cubes.", "$19.49", "shawarma"],
-            [25, "Mixed Shawarma & Lamb Kafta", "Beef and chicken shawarma with minced Kebab.", "$12.99", "shawarma"],
-            [26, "Mixed Shawarma & Wings", "Beef and chicken shawarma with chicken wings.", "$11.99", "shawarma"],
-            [27, "Chicken Shawarma Wrap", "Wrapped in naan with salad and sauce.", "$4.99", "wraps"],
-            [28, "Chicken Arabic Sandwich", "Chicken shawarma in Lebanese naan with salad and chips.", "$7.99", "wraps"],
-            [29, "Lamb Arabic Sandwich", "Lamb shawarma in Lebanese naan with salad and chips.", "$8.89", "wraps"],
-            [30, "Lamb Shawarma Wrap", "Lamb Shawarma Wrapped in naan with salad and sauce.", "$5.49", "wraps"],
-            [31, "Chicken Shish Wrap", "Chicken skewerd Wrapped in naan with salad and sauce.", "$5.29", "wraps"],
-            [32, "Lamb Shish Wrap", "Wrapped in naan with salad and sauce.", "$5.99", "wraps"],
-            [33, "Lamb Kafta Wrap", "minced Kaftra Wrapped in naan with salad and sauce.ADANA", "$5.89", "wraps"],
-            [34, "Mixed Shawarma Wrap", "Chicken and Lamb Shawarma Wrapped in naan with salad and sauce.", "$5.99", "wraps"],
-            [35, "Falafel Wrap (V)", "Wrapped in naan with salad and sauce.", "$4.99", "wraps"],
-            [36, "Vegetarian Wrap (V)", "Aubergine and potatoes wrapped in naan.", "$4.49", "wraps"],
-            [37, "Asia Mixed Kebab Special", "Platter of Lamb Kafta, Chicken Shish, Lamb Shish, and Wings with Naan and salad.", "$18.99", "grills"],
-            [38, "Chicken Shish", "Skewered cubes of grilled chicken breast with Naan and salad.", "$9.99", "grills"],
-            [39, "Lamb Shish", "Cubes of grilled lamb marinated in special herbs with Naan and salad.", "$11.89", "grills"],
-            [40, "Lamb Kafta Kebab", "Seasoned minced lamb with seasonal herbswith Naan and salad.", "$10.99", "grills"],
-            [41, "Chicken Wings", "Marinated with lemon, garlic, and herbs with Naan and salad.", "$8.99", "grills"],
-            [42, "Lamb Kafta & Chicken Shish", "Minced lamb skewers paired with chicken cubeswith Naan and salad .", "$11.49", "grills"],
-            [43, "Lamb Kafta & Wings", "Minced lamb skewers paired with chicken wings with Naan and salad.", "$10.99", "grills"],
-            [44, "Lamb Kafta & Drumsticks", "Minced lamb and Chicken Drumsticks with Naan and salad.", "$10.49", "grills"],
-            [45, "Lamb & Chicken Shish", "Juicy lamb cubes paired with chicken breast cubes with Naan and salad.", "$11.99", "grills"],
-            [46, "Lamb Shish & Kafta", "Grilled lamb cubes with seasoned minced lamb with Naan and salad.", "$11.49", "grills"],
-            [47, "Lamb Shish & Wings", "Grilled lamb cubes with flame-grilled chicken wings with Naan and salad.", "$10.99", "grills"],
-            [48, "Lamb Chops", "Charcoal-grilled, marinated with black pepper and herbs with Naan and salad.", "$14.49", "grills"],
-            [49, "Kurdish Kafta", "Couscous filled with lamb in tomato sauce (Fridays Only).", "$10.99", "specials"],
-            [50, "Seabass", "Char-grilled whole sea bass, seasoned with spices.", "$13.49", "specials"],
-            [51, "Patcha", "Boiled lamb-head and feet in special sauce.", "$10.99", "specials"],
-            [52, "Dolma", "Stuffed grape leaves/vegetables (Sundays Only).", "$10.99", "specials"],
-            [53, "Aubergine Stew (V)", "Aubergine, green pepper, and potatoes stew.", "$1.99", "stews"],
-            [54, "Okra Stew (V)", "Okra cooked in rich tomato sauce.", "$1.99", "stews"],
-            [55, "Kidney Beans Stew (V)", "Beans cooked in rich tomato sauce.", "$1.99", "stews"],
-            [56, "Potato Stew (V)", "Potatoes in tomato sauce with herbs.", "$1.99", "stews"],
-            [57, "Apricots In Sauce (V)", "Sweet apricots in special sauce.", "$1.99", "stews"],
-            [58, "Courgette Stew (V)", "Courgettes in tomato sauce.", "$1.99", "stews"],
-            [59, "Black-Eyed Peas (V)", "Peas in tomato sauce and garlic.", "$1.99", "stews"],
-            [60, "Keema", "Minced meat in tomato sauce.", "$1.99", "stews"],
-            [61, "Green Beans (V)", "Fresh green beans in sauce.", "$1.99", "stews"],
-            [62, "Spinach (V)", "Cooked spinach with garlic and herbs.", "$1.99", "stews"],
-            [63, "Chicken Curry", "Chicken curry with potatoes.", "$3.99", "stews"],
-            [64, "Vegetarian Stew (V)", "Stew of the day. Served with rice and naan.", "$5.99", "stews"],
-            [65, "Chickpeas (V)", "Chickpeas.", "$1.99", "stews"],
-            [66, "Lentil Soup (V)", "Hearty blended lentil soup.", "$1.99", "stews"],
-            [67, "Falafel (V)", "Deep-fried ground chickpeas and garlic.", "$7.49", "stews"],
-            [68, "Plate Of Salad (V)", "Fresh seasonal salad.", "$3.99", "stews"],
-            [69, "Bread (V)", "Fresh naan bread.", "$1.99", "basics"],
-            [70, "Rice (V)", "White or yellow rice.", "$1.99", "basics"],
-            [71, "Side: Chips (V)", "Large portion of chips.", "$2.99", "basics"],
-            [72, "Soft Drinks (Can)", "Various canned soda.", "$0.99", "extras"],
-            [73, "Soft Drinks (1.5L)", "Large bottle of soda.", "$2.99", "extras"],
-            [74, "Fresh Juice", "Orange, Apple, or Carrot juice.", "$2.49", "extras"],
-            [75, "Baklava", "Traditional sweet pastry (per piece).", "$0.99", "extras"],
-            [76, "Ice Cream", "Ben & Jerry's Ice Cream.", "$5.99", "extras"],
-            [77, "Kids: Nuggets", "4 Piece Chicken Nuggets and Chips.", "$3.49", "kids"],
-            [78, "Kids: Chicken Shish", "Chicken Shish and Chips.", "$4.99", "kids"],
-            [79, "Kids: Beefburger", "Beefburger and Chips.", "$4.99", "kids"],
-            [80, "Kids: Falafel (V)", "Falafel and Chips.", "$4.99", "kids"],
-            [81, "Deal For 2 (A)", "1/2 Chicken, Lamb, sides, rice, naans.", "$23.49", "deals"],
-            [82, "Deal For 2 (B)", "Mixed Shawarma, Half Chicken, Two PC Lamb, sides, rice.", "$28.99", "deals"],
-            [83, "Deal For 3 (A)", "Mixed Grill, Lamb Shish, Chicken Shish, Chicken Wings, Shish Kebab, Beef Donner, Chicken Donner, 3 Different Sides, Rice, Chips And Bottle Of Coke.", "$33.99", "deals"],
-            [84, "Deal For 4 (Standard)", "Beef Donner, Chicken Donner, 2 Shish Kebab, 2 Chicken Tikka, 2 Lamb Tikka, 4 Naan Bread, Salad, 1 White Rice, 1 Chips, Bottle of coke", "$44.99", "deals"],
-            [85, "Deal For 4 (Family)", "Kofte Kebab, Lamb Shish, Lamb Skewers, Chicken Skewers, Chicken Wings, Lamb Chops, Chips, Rice And Bottle Of Coke.", "$39.99", "deals"],
-            [86, "Deal For 4 or 5", "Large platter with Chops, Wings, Shawarma, Shish.", "$58.99", "deals"]
+        // Raw data mapped from original list
+        const masterItems = [
+            // Shawarma (Original IDs 12-26)
+            { cat: 'shawarma', name: "Chicken Shawarma", desc: "Roasted boneless chicken, marinated with lemon and garlic.", price: "$9.49" },
+            { cat: 'shawarma', name: "Beef Shawarma", desc: "Roasted boneless beef, marinated with lemon and onion.", price: "$11.49" },
+            { cat: 'shawarma', name: "Mixed Shawarma", desc: "Combination of roasted beef and chicken shawarma.", price: "$11.49" },
+            { cat: 'shawarma', name: "Chicken Shawarma & Lamb Shish", desc: "Chicken shawarma paired with lamb cubes.", price: "$11.89" },
+            { cat: 'shawarma', name: "Chicken Shawarma & Chicken Shish", desc: "Chicken shawarma paired with chicken cubes.", price: "$10.89" },
+            { cat: 'shawarma', name: "Chicken Shawarma & Lamb Kafta", desc: "Chicken shawarma paired with minced lamb.", price: "$10.99" },
+            { cat: 'shawarma', name: "Chicken Shawarma & Wings", desc: "Chicken shawarma served with chicken wings.", price: "$9.99" },
+            { cat: 'shawarma', name: "Beef Shawarma & Lamb Shish", desc: "Beef shawarma paired with lamb cubes.", price: "$11.89" },
+            { cat: 'shawarma', name: "Beef Shawarma & Chicken Shish", desc: "Beef shawarma paired with chicken cubes.", price: "$11.49" },
+            { cat: 'shawarma', name: "Beef Shawarma & Lamb Kafta", desc: "Beef shawarma paired with minced lamb.", price: "$11.99" },
+            { cat: 'shawarma', name: "Beef Shawarma & Wings", desc: "Beef shawarma served with chicken wings.", price: "$10.99" },
+            { cat: 'shawarma', name: "Mixed Shawarma & Lamb Shish", desc: "Beef and chicken shawarma with lamb cubes.", price: "$12.99" },
+            { cat: 'shawarma', name: "Mixed Shawarma & Chicken Shish & Lamb Shish", desc: "Beef, chicken shawarma with chicken and Lamb cubes.", price: "$19.49" },
+            { cat: 'shawarma', name: "Mixed Shawarma & Lamb Kafta", desc: "Beef and chicken shawarma with minced Kebab.", price: "$12.99" },
+            { cat: 'shawarma', name: "Mixed Shawarma & Wings", desc: "Beef and chicken shawarma with chicken wings.", price: "$11.99" },
+            
+            // Wraps (Original IDs 27-36)
+            { cat: 'wraps', name: "Chicken Shawarma Wrap", desc: "Wrapped in naan with salad and sauce.", price: "$4.99" },
+            { cat: 'wraps', name: "Chicken Arabic Sandwich", desc: "Chicken shawarma in Lebanese naan with salad and chips.", price: "$7.99" },
+            { cat: 'wraps', name: "Lamb Arabic Sandwich", desc: "Lamb shawarma in Lebanese naan with salad and chips.", price: "$8.89" },
+            { cat: 'wraps', name: "Lamb Shawarma Wrap", desc: "Lamb Shawarma Wrapped in naan with salad and sauce.", price: "$5.49" },
+            { cat: 'wraps', name: "Chicken Shish Wrap", desc: "Chicken skewerd Wrapped in naan with salad and sauce.", price: "$5.29" },
+            { cat: 'wraps', name: "Lamb Shish Wrap", desc: "Wrapped in naan with salad and sauce.", price: "$5.99" },
+            { cat: 'wraps', name: "Lamb Kafta Wrap", desc: "minced Kaftra Wrapped in naan with salad and sauce.ADANA", price: "$5.89" },
+            { cat: 'wraps', name: "Mixed Shawarma Wrap", desc: "Chicken and Lamb Shawarma Wrapped in naan with salad and sauce.", price: "$5.99" },
+            { cat: 'wraps', name: "Falafel Wrap (V)", desc: "Wrapped in naan with salad and sauce.", price: "$4.99" },
+            { cat: 'wraps', name: "Vegetarian Wrap (V)", desc: "Aubergine and potatoes wrapped in naan.", price: "$4.49" },
+
+            // Grills (Original IDs 37-48)
+            { cat: 'grills', name: "Asia Mixed Kebab Special", desc: "Platter of Lamb Kafta, Chicken Shish, Lamb Shish, and Wings with Naan and salad.", price: "$18.99" },
+            { cat: 'grills', name: "Chicken Shish", desc: "Skewered cubes of grilled chicken breast with Naan and salad.", price: "$9.99" },
+            { cat: 'grills', name: "Lamb Shish", desc: "Cubes of grilled lamb marinated in special herbs with Naan and salad.", price: "$11.89" },
+            { cat: 'grills', name: "Lamb Kafta Kebab", desc: "Seasoned minced lamb with seasonal herbswith Naan and salad.", price: "$10.99" },
+            { cat: 'grills', name: "Chicken Wings", desc: "Marinated with lemon, garlic, and herbs with Naan and salad.", price: "$8.99" },
+            { cat: 'grills', name: "Lamb Kafta & Chicken Shish", desc: "Minced lamb skewers paired with chicken cubeswith Naan and salad .", price: "$11.49" },
+            { cat: 'grills', name: "Lamb Kafta & Wings", desc: "Minced lamb skewers paired with chicken wings with Naan and salad.", price: "$10.99" },
+            { cat: 'grills', name: "Lamb Kafta & Drumsticks", desc: "Minced lamb and Chicken Drumsticks with Naan and salad.", price: "$10.49" },
+            { cat: 'grills', name: "Lamb & Chicken Shish", desc: "Juicy lamb cubes paired with chicken breast cubes with Naan and salad.", price: "$11.99" },
+            { cat: 'grills', name: "Lamb Shish & Kafta", desc: "Grilled lamb cubes with seasoned minced lamb with Naan and salad.", price: "$11.49" },
+            { cat: 'grills', name: "Lamb Shish & Wings", desc: "Grilled lamb cubes with flame-grilled chicken wings with Naan and salad.", price: "$10.99" },
+            { cat: 'grills', name: "Lamb Chops", desc: "Charcoal-grilled, marinated with black pepper and herbs with Naan and salad.", price: "$14.49" },
+
+            // Lamb Dishes (Original IDs 1-6)
+            { cat: 'lamb', name: "Lamb On The Bone", desc: "Tender pieces of lamb, slow-cooked in special sauce and herbs. Served with Stew, Salad, Rice & Naan Bread", price: "$9.99" },
+            { cat: 'lamb', name: "Lamb On Bone (Large)", desc: "Large tender pieces of lamb, slow-cooked in special sauce. Served with Stew, Salad, Rice & Naan Bread", price: "$12.99" },
+            { cat: 'lamb', name: "Lamb Shank", desc: "Slow-cooked lamb shank marinated in special herbs. Served with Stew, Salad, Rice & Naan Bread", price: "$13.40" },
+            { cat: 'lamb', name: "Tashreeb", desc: "Naan soaked in okra and lamb stew.", price: "$8.89" },
+            { cat: 'lamb', name: "Lamb Loin Chops", desc: "BBQ Lamb back loin, marinated with herbs.", price: "$17.99" },
+            { cat: 'lamb', name: "Lamb Chopped (Poached)", desc: "BBQ Poached in a lightly spiced vegetable stock.", price: "$16.49" },
+
+            // Chicken Dishes (Original IDs 7-11)
+            { cat: 'poultry', name: "1/4 Chicken ", desc: "Oven-roasted quarter chicken. Served with stews, salad, rice, and naan.", price: "$8.99" },
+            { cat: 'poultry', name: "1/2 Chicken With Rice ", desc: "Oven-roasted half chicken. Served with stews, salad, rice, and naan.", price: "$11.49" },
+            { cat: 'poultry', name: "1/2 Chicken with Salad", desc: "Oven-roasted half chicken with salad and naan OR chips.", price: "$6.99" },
+            { cat: 'poultry', name: "Mixed Lamb, Chicken And Rice", desc: "Piece of lamb on bone and quarter chicken, oven-roasted.", price: "$13.89" },
+            { cat: 'poultry', name: "Biryani", desc: "Fragrant rice with tender pieces of chicken and lamb.", price: "$10.99" },
+
+            // Stews (Original IDs 53-68)
+            { cat: 'stews', name: "Aubergine Stew (V)", desc: "Aubergine, green pepper, and potatoes stew.", price: "$1.99" },
+            { cat: 'stews', name: "Okra Stew (V)", desc: "Okra cooked in rich tomato sauce.", price: "$1.99" },
+            { cat: 'stews', name: "Kidney Beans Stew (V)", desc: "Beans cooked in rich tomato sauce.", price: "$1.99" },
+            { cat: 'stews', name: "Potato Stew (V)", desc: "Potatoes in tomato sauce with herbs.", price: "$1.99" },
+            { cat: 'stews', name: "Apricots In Sauce (V)", desc: "Sweet apricots in special sauce.", price: "$1.99" },
+            { cat: 'stews', name: "Courgette Stew (V)", desc: "Courgettes in tomato sauce.", price: "$1.99" },
+            { cat: 'stews', name: "Black-Eyed Peas (V)", desc: "Peas in tomato sauce and garlic.", price: "$1.99" },
+            { cat: 'stews', name: "Keema", desc: "Minced meat in tomato sauce.", price: "$1.99" },
+            { cat: 'stews', name: "Green Beans (V)", desc: "Fresh green beans in sauce.", price: "$1.99" },
+            { cat: 'stews', name: "Spinach (V)", desc: "Cooked spinach with garlic and herbs.", price: "$1.99" },
+            { cat: 'stews', name: "Chicken Curry", desc: "Chicken curry with potatoes.", price: "$3.99" },
+            { cat: 'stews', name: "Vegetarian Stew (V)", desc: "Stew of the day. Served with rice and naan.", price: "$5.99" },
+            { cat: 'stews', name: "Chickpeas (V)", desc: "Chickpeas.", price: "$1.99" },
+            { cat: 'stews', name: "Lentil Soup (V)", desc: "Hearty blended lentil soup.", price: "$1.99" },
+            { cat: 'stews', name: "Falafel (V)", desc: "Deep-fried ground chickpeas and garlic.", price: "$7.49" },
+            { cat: 'stews', name: "Plate Of Salad (V)", desc: "Fresh seasonal salad.", price: "$3.99" },
+
+            // Basics (Original IDs 69-71)
+            { cat: 'basics', name: "Bread (V)", desc: "Fresh naan bread.", price: "$1.99" },
+            { cat: 'basics', name: "Rice (V)", desc: "White or yellow rice.", price: "$1.99" },
+            { cat: 'basics', name: "Side: Chips (V)", desc: "Large portion of chips.", price: "$2.99" },
+
+            // Drinks/Extras (Original IDs 72-76)
+            { cat: 'extras', name: "Soft Drinks (Can)", desc: "Various canned soda.", price: "$0.99" },
+            { cat: 'extras', name: "Soft Drinks (1.5L)", desc: "Large bottle of soda.", price: "$2.99" },
+            { cat: 'extras', name: "Fresh Juice", desc: "Orange, Apple, or Carrot juice.", price: "$2.49" },
+            { cat: 'extras', name: "Baklava", desc: "Traditional sweet pastry (per piece).", price: "$0.99" },
+            { cat: 'extras', name: "Ice Cream", desc: "Ben & Jerry's Ice Cream.", price: "$5.99" },
+
+            // Kids (Original IDs 77-80)
+            { cat: 'kids', name: "Kids: Nuggets", desc: "4 Piece Chicken Nuggets and Chips.", price: "$3.49" },
+            { cat: 'kids', name: "Kids: Chicken Shish", desc: "Chicken Shish and Chips.", price: "$4.99" },
+            { cat: 'kids', name: "Kids: Beefburger", desc: "Beefburger and Chips.", price: "$4.99" },
+            { cat: 'kids', name: "Kids: Falafel (V)", desc: "Falafel and Chips.", price: "$4.99" }
         ];
 
         const categories = [
-            { id: 'lamb', title: ' Lamb & Rice Dishes' },
-            { id: 'poultry', title: 'Chicken & Rice Dishes' },
             { id: 'shawarma', title: 'Asia Shawarma' },
             { id: 'wraps', title: 'Sandwiches & Wraps' },
             { id: 'grills', title: 'Charcoal Grill' },
-            { id: 'specials', title: 'Chef Specials & Seasonal' },
+            { id: 'lamb', title: 'Lamb & Rice Dishes' },
+            { id: 'poultry', title: 'Chicken & Rice Dishes' },
             { id: 'stews', title: 'Stews & Vegetarian Specialties' },
             { id: 'basics', title: 'Basics & Sides' },
             { id: 'extras', title: 'Drinks & Desserts' },
-            { id: 'kids', title: 'Kids Selection' },
-            { id: 'deals', title: 'Group Deals & Platters' }
+            { id: 'kids', title: 'Kids Selection' }
         ];
 
-        const breakPoints = new Set([
-            7, 14, 21, 27, 32, 37, 43, 49, 55, 61, 67, 73, 79, 85
-        ]);
+        // Breakpoints for print paging
+        const breakPoints = new Set([7, 14, 21, 28, 35, 42, 49, 56, 63, 70, 77]);
 
         const container = document.getElementById('menu-content');
 
@@ -428,19 +354,15 @@
             return name.replace(/\(V\)/g, '').replace(/[:]/g, '').trim().replace(/\s+/g, '_').toLowerCase() + ".png";
         };
 
-        let globalIdx = 0;
+        let currentGlobalNumber = 1;
+        let globalLayoutIndex = 0;
         
         categories.forEach(cat => {
-            const items = allItems.filter(i => i[4] === cat.id);
+            const items = masterItems.filter(i => i.cat === cat.id);
             if (!items.length) return;
 
             const section = document.createElement('section');
             section.className = "menu-section";
-            
-            const firstItemNum = items[0][0];
-            if (breakPoints.has(firstItemNum)) {
-                section.classList.add('force-page-start');
-            }
 
             const headerDiv = document.createElement('div');
             headerDiv.className = "category-header";
@@ -454,9 +376,8 @@
             section.appendChild(currentTable);
 
             items.forEach((item, index) => {
-                const idNum = item[0];
-
-                if (index > 0 && breakPoints.has(idNum)) {
+                // Determine if we need a print break
+                if (currentGlobalNumber > 1 && breakPoints.has(currentGlobalNumber)) {
                     const breakDiv = document.createElement('div');
                     breakDiv.className = "print-break";
                     section.appendChild(breakDiv);
@@ -468,30 +389,27 @@
                     section.appendChild(currentTable);
                 }
 
-                const isEven = (globalIdx % 2 === 0);
-                const isVeg = item[1].includes('(V)');
-                const cleanT = item[1].replace('(V)', '').trim();
-                const filename = getSafeFilename(item[1]);
+                const isEven = (globalLayoutIndex % 2 === 0);
+                const isVeg = item.name.includes('(V)');
+                const cleanName = item.name.replace('(V)', '').trim();
+                const filename = getSafeFilename(item.name);
                 
-                let rowHtml = '';
-
-                const numHtml = `<td class="col-num"><span class="num-badge ${isVeg?'num-badge-veggie':''}">${idNum}</span></td>`;
-                
+                const numHtml = `<td class="col-num"><span class="num-badge ${isVeg?'num-badge-veggie':''}">${currentGlobalNumber}</span></td>`;
                 const textHtml = `
                     <td class="col-text">
                         <div class="title-row">
-                            <span class="item-title">${cleanT} ${isVeg?'<span class="veggie-label">Vegetarian</span>':''}</span>
-                            <span class="inline-price">${item[3]}</span>
+                            <span class="item-title">${cleanName} ${isVeg?'<span class="veggie-label">Vegetarian</span>':''}</span>
+                            <span class="inline-price">${item.price}</span>
                         </div>
-                        <p class="item-description">${item[2]}</p>
+                        <p class="item-description">${item.desc}</p>
                     </td>
                 `;
 
                 const imgHtmlLeft = `
                     <td class="col-img-box">
                         <div class="img-wrapper style-square">
-                            <div class="placeholder-box" id="placeholder-${idNum}">PREPARING<br>${filename}</div>
-                            <img id="img-${idNum}" class="item-img" src="${filename}" onload="document.getElementById('placeholder-${idNum}').style.display='none'">
+                            <div class="placeholder-box">PREPARING<br>${filename}</div>
+                            <img class="item-img" src="${filename}" onerror="this.previousElementSibling.style.display='flex';">
                         </div>
                     </td>
                 `;
@@ -499,24 +417,20 @@
                 const imgHtmlRight = `
                     <td class="col-img-box-right">
                         <div class="img-wrapper style-circle">
-                            <div class="placeholder-box" id="placeholder-${idNum}">PREPARING<br>${filename}</div>
-                            <img id="img-${idNum}" class="item-img" src="${filename}" onload="document.getElementById('placeholder-${idNum}').style.display='none'">
+                            <div class="placeholder-box">PREPARING<br>${filename}</div>
+                            <img class="item-img" src="${filename}" onerror="this.previousElementSibling.style.display='flex';">
                         </div>
                     </td>
                 `;
 
-                if (isEven) {
-                    rowHtml = numHtml + imgHtmlLeft + textHtml;
-                } else {
-                    rowHtml = numHtml + textHtml + imgHtmlRight;
-                }
-                
                 const tr = document.createElement('tr');
                 tr.className = "menu-row";
-                tr.innerHTML = rowHtml;
+                tr.innerHTML = isEven ? (numHtml + imgHtmlLeft + textHtml) : (numHtml + textHtml + imgHtmlRight);
+                
                 currentTbody.appendChild(tr);
 
-                globalIdx++;
+                currentGlobalNumber++;
+                globalLayoutIndex++;
             });
 
             container.appendChild(section);
