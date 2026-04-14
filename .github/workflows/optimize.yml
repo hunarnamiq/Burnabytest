@@ -6,10 +6,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
+      - name: Checkout Repo
         uses: actions/checkout@v4
 
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          # This line tells the robot to just do it without a PR
+          compressOnly: false
