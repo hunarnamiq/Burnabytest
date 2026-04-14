@@ -1,17 +1,21 @@
 name: Optimize Images
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
       - name: Compress Images
-        uses: im-open/image-compression@v1.0.1
+        uses: calibreapp/image-actions@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
