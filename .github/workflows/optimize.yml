@@ -12,7 +12,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Compress Images
-        uses: im-open/image-compression-action@v1.0.1
+        uses: im-open/image-compression@v1.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          image_extensions: 'png,jpg,jpeg,webp'
