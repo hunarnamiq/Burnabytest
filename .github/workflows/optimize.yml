@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
 
       - name: Compress Images
-        uses: calibreapp/image-actions@main
+        uses: im-open/image-compression-action@v1.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          image_extensions: 'png,jpg,jpeg,webp'
