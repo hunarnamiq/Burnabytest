@@ -1,12 +1,9 @@
 name: Optimize Images
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: # This brings the button back!
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   build:
@@ -19,3 +16,9 @@ jobs:
         uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true # Just shrink them, don't make a PR
+
+      - name: Force Save to GitHub
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Robot: Images Optimized"
